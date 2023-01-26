@@ -16,7 +16,7 @@ const checkFizz = async (req: Request, res: Response) => {
   }
 
   try {
-    res.json({result: fizzService.isFizz(input)});
+    res.status(200).json({result: fizzService.isFizz(input)});
   } catch (err) {
     res.status(500).json({error: "Something was wrong"});
   }
