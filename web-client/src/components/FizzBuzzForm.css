@@ -1,0 +1,45 @@
+.Form-computing {
+  padding: 2%;
+}
+
+.Form-container {
+  padding: 2%;
+}
+
+.Form-label {
+  margin-right: 10px;
+}
+
+.Form-error {
+  color: red;
+}
+
+input {
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  padding: 7px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  border: 0;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+  background-color: none;
+}
+
+ol {
+  display: inline-block;
+}

@@ -1,10 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import FizzBuzzForm from "./components/FizzBuzzForm";
 
 function App() {
   return (
     <div className="App">
-      <p>hello</p>
+      <h1>Compute Fizz Buzz</h1>
+      <FizzBuzzForm />
     </div>
   );
 }

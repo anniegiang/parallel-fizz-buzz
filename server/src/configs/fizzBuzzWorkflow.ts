@@ -9,6 +9,4 @@ export default {
   projectName: PROJECT_NAME,
   location: LOCATION,
   workflow: WORKFLOW,
-  lowerLimit: 1,
-  upperLimit: 10000,
 };
