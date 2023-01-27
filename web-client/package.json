@@ -20,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint --fix --config ./.eslintrc.json src/**",
+    "format": "npx prettier --config ./.prettierrc.json --write src/**"
   },
   "eslintConfig": {
     "extends": [

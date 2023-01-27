@@ -2,12 +2,10 @@ import React, {memo, useCallback, useRef, useState} from "react";
 import {computeFizzBuzz} from "../api/fizzBuzz";
 import "./FizzBuzzForm.css";
 import FizzBuzzResults from "./FizzBuzzResults";
-
-export const LOWER_LIMIT = 1;
-export const UPPER_LIMIT = 10000;
+import {LOWER_LIMIT, UPPER_LIMIT} from "../constants/fizzBuzz";
 
 const FizzBuzzForm = memo(() => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState<string>("");
   const [error, setError] = useState<string>("");
   const [results, setResults] = useState<string[]>([]);
   const [computing, setComputing] = useState<boolean>(false);
@@ -16,9 +14,8 @@ const FizzBuzzForm = memo(() => {
   const inputRefValue = Number(inputRef?.current?.value);
 
   const handleChange = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      setInput(event.target.value);
-    },
+    (event: React.ChangeEvent<HTMLInputElement>) =>
+      setInput(event.target.value),
     []
   );
 
