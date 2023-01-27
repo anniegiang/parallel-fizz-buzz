@@ -5,7 +5,7 @@ https://parallellearning.notion.site/Fizz-Buzz-Cloud-Challenge-9176f02a38f54338b
 ### Pre-reqs
 - npm
 - node
-- You have access to run the `fizzbuzz-workflow` that lives in GCP from Annie's account. Send Annie your email know if you need access.
+- You have access to run the `fizzbuzz-workflow` that lives in GCP from Annie's account. Send Annie your email if you need access.
 - gcloud CLI (optional)
 
 #### Steps
