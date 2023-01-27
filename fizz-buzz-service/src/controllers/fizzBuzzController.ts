@@ -6,19 +6,19 @@ const checkFizzBuzz = async (req: Request, res: Response) => {
   const {input} = req.body;
 
   if (typeof input !== "number") {
-    res.status(400).json({error: "Input must be a number"});
+    return res.status(400).json({error: "Input must be a number"});
   }
 
   if (!fizzBuzzService.validateFizzBuzz(input)) {
-    res
+    return res
       .status(400)
       .json({error: `Input must be >= ${LOWER_LIMIT} and <= ${UPPER_LIMIT}`});
   }
 
   try {
-    res.status(200).json({result: fizzBuzzService.isFizzBuzz(input)});
+    return res.status(200).json({result: fizzBuzzService.isFizzBuzz(input)});
   } catch (err) {
-    res.status(500).json({error: "Something was wrong"});
+    return res.status(500).json({error: "Something was wrong"});
   }
 };
 
