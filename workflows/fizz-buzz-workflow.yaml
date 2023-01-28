@@ -13,14 +13,14 @@ main:
             - check_fizzbuzz:
                 call: http.post
                 args:
-                  url: https://check-fizzbuzz-rhbx34gycq-wl.a.run.app
+                  url: https://check-fizz-buzz-service-rhbx34gycq-wl.a.run.app
                   body:
                     input: ${index}
                 result: check_fizzbuzz_result
             - check_fizz:
                 call: http.post
                 args:
-                  url: https://check-fizz-rhbx34gycq-wl.a.run.app
+                  url: https://check-fizz-service-rhbx34gycq-wl.a.run.app
                   body:
                     input: ${index}
                 result: check_fizz_result
